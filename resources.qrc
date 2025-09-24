@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/music/DotGame_BaseLine.mp3</file>
+        <file>resources/music/DotGame_16T+Roc.mp3</file>
+        <file>resources/music/DotGame_Fai+Fri.mp3</file>
+        <file>resources/music/DotGame_Hit+Koo.mp3</file>
+        <file>resources/music/DotGame_Ist+Jun.mp3</file>
+        <file>resources/music/DotGame_MeG+Meg.mp3</file>
+        <file>resources/music/DotGame_Son+Pir.mp3</file>
+    </qresource>
+</RCC>

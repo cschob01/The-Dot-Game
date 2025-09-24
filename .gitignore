@@ -1,0 +1,13 @@
+build/
+*.o
+*.exe
+*.app
+*.user
+*.pro.user
+*.log
+*.obj
+*.swp
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake

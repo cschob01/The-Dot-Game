@@ -1,0 +1,56 @@
+Hello! Welcome to Carlos' custom map maker guide.
+Follow these steps to create a map:
+    1) Create a map#_#.h file relating to the map's stage and level.
+    2) In that file make your class a subclass of Map (will need to # include "../map.h").
+    3) Override the constructor, adding functions below to your liking.
+    4) Make sure to add it to mapsorter.h in order to include it in the game.
+Below are the functions you will use to create your custom map. To avoid confusion, I 
+recommend you label what each widget is when you create it. 
+Have fun!
+
+Necessary boilerplate (must go first):
+
+    void setMapSize(int width, int height);
+
+    starting_coords = QPointF(__, __);
+    starting_angle = ___.0;
+    loading_text = "_\n_________";
+
+Available functions:
+
+    QWidget * makeWall(int x, int y, int w, int h, bool coll = true);
+    QWidget * makeObst(int x, int y, int w, int h, bool coll = true);
+    QWidget * makeFin(int x, int y, int w, int h, bool coll = true);
+    QWidget * makeInvisibleObst(int x, int y, int w, int h, bool coll = true);
+
+    QWidget * makeMovingObst(int x, int y, int w, int h, int mx, int my, int cycle, bool complete = true, bool coll = true);
+    QWidget * makeMovingInvisibleObst(int x, int y, int w, int h, int mx, int my, int cycle, bool complete = true, bool coll = true);
+    QWidget * makeMovingFin(int x, int y, int w, int h, int mx, int my, int cycle, bool complete = true, bool coll = true);
+
+    QWidget * makeFollowingObst(int x, int y, int w, int h, double speed, bool coll = true);
+    QWidget * makeFollowingInvisibleObst(int x, int y, int w, int h, double speed, bool coll = true);
+    QWidget * makeFollowingFin(int x, int y, int w, int h, double speed, bool coll = true);
+
+    Beam * makeBeamObst(int x, int y, double angle, double angle_speed);
+    Beam * makeBeamInvisibleObst(int x, int y, double angle, double angle_speed);
+    Beam * makeBeamFin(int x, int y, double angle, double angle_speed);
+
+    Beam * makeMovingBeamObst(int x, int y, double angle, double angle_speed, int mx, int my, int cycle, bool complete = true);
+    Beam * makeMovingBeamInvisibleObst(int x, int y, double angle, double angle_speed, int mx, int my, int cycle, bool complete = true);
+    Beam * makeMovingBeamFin(int x, int y, double angle, double angle_speed, int mx, int my, int cycle, bool complete = true);
+
+Settings modification: (Default settings used as example)
+
+    forced_settings.pov_h = 40;
+    forced_settings.pov_v = 30;
+    forced_settings.columns = 100;
+    forced_settings.rows = 80;
+    forced_settings.render = 200;
+    forced_settings.height = 10;
+    forced_settings.sensitivityH = 3;
+    forced_settings.sensitivityV = 2;
+    forced_settings.map = true;
+
+Extra modifications:
+
+    void setFadeTimer(int duration); //Duration in seconds

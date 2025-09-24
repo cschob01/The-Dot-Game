@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <!-- Basic App Information -->
+    <key>CFBundleName</key>
+    <string>The Dot Game</string> <!-- Your game name -->
+    <key>CFBundleDisplayName</key>
+    <string>The Dot Game</string> <!-- Display name -->
+    <key>CFBundleIdentifier</key>
+    <string>com.yourcompany.thedotgame</string> <!-- Bundle Identifier (reverse domain format) -->
+    <key>CFBundleVersion</key>
+    <string>1.0.0</string> <!-- Version of your app -->
+    <key>CFBundleShortVersionString</key>
+    <string>1.0.0</string> <!-- Short version for the user -->
+    <key>CFBundleExecutable</key>
+    <string>The Dot Game</string> <!-- The name of your executable file -->
+
+    <!-- App Icon -->
+    <key>CFBundleIconFile</key>
+    <string>DotGameIcon.icns</string> <!-- Name of your icon file -->
+
+    <!-- Optional: App Category -->
+    <key>LSApplicationCategoryType</key>
+    <string>public.app-category.games</string>
+
+    <!-- App Behavior -->
+    <key>LSUIElement</key>
+    <true/> <!-- Set to true if you don't want the app to show up in the dock (e.g., for background tasks) -->
+
+    <!-- Other keys you may need -->
+    <key>NSHighResolutionCapable</key>
+    <true/> <!-- For retina display support -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+      <key>NSAllowsArbitraryLoads</key>
+      <true/>
+    </dict>
+  </dict>
+</plist>
